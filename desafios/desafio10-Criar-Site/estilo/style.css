@@ -42,7 +42,7 @@ body {
     background-color: var(--cor2);
     font-family: var(--fonte-padrao);
 }
-
+ /*colocando emoji de link*/
 a.externo::after {
     content: '\00A0\1F517'; /*essa tag: \00A0 é para colocar um espaço*/
 }
@@ -55,25 +55,38 @@ header {
 }
 
 header > h1 {
-    color: white;
-    font-family: var(--fonte-destaque);
-    text-align: center;
-    font-weight: normal;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 0px black;
+    color: white;/*cor do texto*/
+    
+    font-family: var(--fonte-destaque);/*font do texto principal, usando o root*/
+    
+    text-align: center; /*crentralizar o texto*/
+    
+    font-weight: normal; /*tirando o negrito do texto, pois a font já deixa o texto bem destacado*/
+    
+    margin-bottom: 20px; /*colocando um devido espaço dem baixo do texto para separar do conteudo <p>.*/
+    
+    text-shadow: 2px 2px 0px black;/*sombra no exto*/
 
 }
 
 header > p {
-    font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    color: white;
-    max-width: 600px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: auto;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    font-family: var(--fonte-padrao);/*font do texto principal, usando o root*/
+    
+    font-size: 1.2em; /*tamanho do texto*/
+    
+    color: white; /* cor do texto*/
+    
+    max-width: 600px; /* fazer com que o texto quebre a linha em disposivos menos ou quando diminuir a tela do navegador*/ 
+    
+    padding-right: 10px; /* espaço pequeno no texto na lateral direita*/
+    
+    padding-left: 10px;/* espaço pequeno no texto na lateral esquerda*/
+    
+    margin: auto; /*fazer com que o texto se adéque(ajuste) sosinho*/
+   
+    padding-bottom: 30px; /*separar o texto do menu*/
+    
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315); /* sombras no texto usamos a tag text-shadow*/
 }
 
 nav {
