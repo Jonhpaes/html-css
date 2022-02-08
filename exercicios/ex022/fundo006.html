@@ -7,6 +7,7 @@
     <title>Posicionamento de imagem automatica no fundo da imagem</title>
     <style>
         body {
+           /*
             height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
@@ -14,8 +15,19 @@
             background-repeat: no-repeat;
 
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+
+            /* Shorthand - background
+
+                color > image > position > repeat > [size] > attachment
+            */
             
-            /* tipos de personalização de tamanhos de imagem no fundo
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+        /* tipos de personalização de tamanhos de imagem no fundo
 
             auto: Deixa o navegador se virar com a imagem.
             
@@ -25,11 +37,10 @@
             
             cover: vai apresentar cortes na imagem mas irá preencher a tela inteira.
             */
-        }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid rgb(2, 2, 56);
@@ -40,7 +51,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus porro ab minus at praesentium temporibus? Quibusdam, iste distinctio veritatis ullam nihil libero commodi ad praesentium ipsa voluptates repellendus. Exercitationem, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit libero dolor vitae esse doloremque, nobis totam quia, molestias eligendi similique omnis cupiditate, dolorem a aliquam enim laborum. Quidem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam sint, molestias rem ex eos saepe fugit sit nihil laudantium earum officiis totam ducimus rerum voluptates esse laboriosam perferendis dicta.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus porro ab minus at praesentium temporibus? Quibusdam, iste distinctio veritatis ullam nihil libero commodi ad praesentium ipsa voluptates repellendus. Exercitationem, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit libero dolor vitae esse doloremque, nobis totam quia, molestias eligendi similique omnis cupiditate, dolorem a aliquam enim laborum. Quidem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam sint, molestias rem ex eos saepe fugit sit nihil laudantium earum officiis totam ducimus rerum voluptates esse laboriosam perferendis dicta.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus porro ab minus at praesentium temporibus? Quibusdam, iste distinctio veritatis ullam nihil libero commodi ad praesentium ipsa voluptates repellendus. Exercitationem, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit libero dolor vitae esse doloremque, nobis totam quia, molestias eligendi similique omnis cupiditate, dolorem a aliquam enim laborum. Quidem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam sint, molestias rem ex eos saepe fugit sit nihil laudantium earum officiis totam ducimus rerum voluptates esse laboriosam perferendis dicta.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus porro ab minus at praesentium temporibus? Quibusdam, iste distinctio veritatis ullam nihil libero commodi ad praesentium ipsa voluptates repellendus. Exercitationem, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit libero dolor vitae esse doloremque, nobis totam quia, molestias eligendi similique omnis cupiditate, dolorem a aliquam enim laborum. Quidem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam sint, molestias rem ex eos saepe fugit sit nihil laudantium earum officiis totam ducimus rerum voluptates esse laboriosam perferendis dicta.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus porro ab minus at praesentium temporibus? Quibusdam, iste distinctio veritatis ullam nihil libero commodi ad praesentium ipsa voluptates repellendus. Exercitationem, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit libero dolor vitae esse doloremque, nobis totam quia, molestias eligendi similique omnis cupiditate, dolorem a aliquam enim laborum. Quidem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam sint, molestias rem ex eos saepe fugit sit nihil laudantium earum officiis totam ducimus rerum voluptates esse laboriosam perferendis dicta.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus porro ab minus at praesentium temporibus? Quibusdam, iste distinctio veritatis ullam nihil libero commodi ad praesentium ipsa voluptates repellendus. Exercitationem, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit libero dolor vitae esse doloremque, nobis totam quia, molestias eligendi similique omnis cupiditate, dolorem a aliquam enim laborum. Quidem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam sint, molestias rem ex eos saepe fugit sit nihil laudantium earum officiis totam ducimus rerum voluptates esse laboriosam perferendis dicta.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus porro ab minus at praesentium temporibus? Quibusdam, iste distinctio veritatis ullam nihil libero commodi ad praesentium ipsa voluptates repellendus. Exercitationem, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit libero dolor vitae esse doloremque, nobis totam quia, molestias eligendi similique omnis cupiditate, dolorem a aliquam enim laborum. Quidem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam sint, molestias rem ex eos saepe fugit sit nihil laudantium earum officiis totam ducimus rerum voluptates esse laboriosam perferendis dicta.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus porro ab minus at praesentium temporibus? Quibusdam, iste distinctio veritatis ullam nihil libero commodi ad praesentium ipsa voluptates repellendus. Exercitationem, perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit libero dolor vitae esse doloremque, nobis totam quia, molestias eligendi similique omnis cupiditate, dolorem a aliquam enim laborum. Quidem, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam sint, molestias rem ex eos saepe fugit sit nihil laudantium earum officiis totam ducimus rerum voluptates esse laboriosam perferendis dicta.</p>
     </main>
 </body>
 </html>
