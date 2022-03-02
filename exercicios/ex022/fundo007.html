@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+            /*
+            Quando usamos o absolute podemos alterar a posição do elemento, tanto no left: 50%;, top: 50%;. mas o conteudo não ficara centralizado, ai que usamos o "transform: translate();" com isso podemos realmente centralizar o conteudo, ou seja eu movo o componente -50% para a esquerda e -50% para cima, isso porque usei valores negativos, é o passo a passo para conseguir centralizar tanto horizontalmente quanto verticalmente um elemento na tela.
+            */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
