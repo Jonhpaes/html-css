@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -28,8 +29,25 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        /* Deixando o cabeçalho colado no top ao rolar para baixo */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+ 
+        /* Esse "2n" é o total de intervalos que você quer que o efeito zebrado apareça.
+        Sem afetar as linhas do cabeçalho e o rodapé.
+        se você quiser que o intervalo seja n° ímpares, usamos a tag (odd), se for em intervalos pares é a tag (even) */
+        tbody > tr:nth-child(odd)/* 2n-1 */ {
+            background-color: white;
+        }
+        tbody > tr:nth-child(even)/* 2n */ {
+            background-color: lightgray;
         }
 
         td.num {
@@ -175,5 +193,17 @@
             </tr>
         </tbody>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi temporibus magnam esse maiores deserunt rerum harum animi earum quis molestias assumenda sit itaque, accusamus ipsam dolorum quidem quibusdam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit, magni dolorem consequatur repellat iure neque ipsam pariatur beatae exercitationem qui vitae voluptates cumque numquam harum? Laborum libero sapiente molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tenetur, incidunt inventore veniam expedita amet maiores iste officia totam dignissimos qui ea corporis architecto! Vitae assumenda error maxime sed explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum libero sapiente, provident laboriosam repellendus cum praesentium temporibus, pariatur quia dolore natus voluptas esse. Quo temporibus, suscipit voluptates exercitationem facere praesentium.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi temporibus magnam esse maiores deserunt rerum harum animi earum quis molestias assumenda sit itaque, accusamus ipsam dolorum quidem quibusdam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit, magni dolorem consequatur repellat iure neque ipsam pariatur beatae exercitationem qui vitae voluptates cumque numquam harum? Laborum libero sapiente molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tenetur, incidunt inventore veniam expedita amet maiores iste officia totam dignissimos qui ea corporis architecto! Vitae assumenda error maxime sed explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum libero sapiente, provident laboriosam repellendus cum praesentium temporibus, pariatur quia dolore natus voluptas esse. Quo temporibus, suscipit voluptates exercitationem facere praesentium.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi temporibus magnam esse maiores deserunt rerum harum animi earum quis molestias assumenda sit itaque, accusamus ipsam dolorum quidem quibusdam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit, magni dolorem consequatur repellat iure neque ipsam pariatur beatae exercitationem qui vitae voluptates cumque numquam harum? Laborum libero sapiente molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tenetur, incidunt inventore veniam expedita amet maiores iste officia totam dignissimos qui ea corporis architecto! Vitae assumenda error maxime sed explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum libero sapiente, provident laboriosam repellendus cum praesentium temporibus, pariatur quia dolore natus voluptas esse. Quo temporibus, suscipit voluptates exercitationem facere praesentium.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi temporibus magnam esse maiores deserunt rerum harum animi earum quis molestias assumenda sit itaque, accusamus ipsam dolorum quidem quibusdam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit, magni dolorem consequatur repellat iure neque ipsam pariatur beatae exercitationem qui vitae voluptates cumque numquam harum? Laborum libero sapiente molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tenetur, incidunt inventore veniam expedita amet maiores iste officia totam dignissimos qui ea corporis architecto! Vitae assumenda error maxime sed explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum libero sapiente, provident laboriosam repellendus cum praesentium temporibus, pariatur quia dolore natus voluptas esse. Quo temporibus, suscipit voluptates exercitationem facere praesentium.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi temporibus magnam esse maiores deserunt rerum harum animi earum quis molestias assumenda sit itaque, accusamus ipsam dolorum quidem quibusdam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit, magni dolorem consequatur repellat iure neque ipsam pariatur beatae exercitationem qui vitae voluptates cumque numquam harum? Laborum libero sapiente molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tenetur, incidunt inventore veniam expedita amet maiores iste officia totam dignissimos qui ea corporis architecto! Vitae assumenda error maxime sed explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum libero sapiente, provident laboriosam repellendus cum praesentium temporibus, pariatur quia dolore natus voluptas esse. Quo temporibus, suscipit voluptates exercitationem facere praesentium.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi temporibus magnam esse maiores deserunt rerum harum animi earum quis molestias assumenda sit itaque, accusamus ipsam dolorum quidem quibusdam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit, magni dolorem consequatur repellat iure neque ipsam pariatur beatae exercitationem qui vitae voluptates cumque numquam harum? Laborum libero sapiente molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tenetur, incidunt inventore veniam expedita amet maiores iste officia totam dignissimos qui ea corporis architecto! Vitae assumenda error maxime sed explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum libero sapiente, provident laboriosam repellendus cum praesentium temporibus, pariatur quia dolore natus voluptas esse. Quo temporibus, suscipit voluptates exercitationem facere praesentium.</p>
 </body>
 </html>
