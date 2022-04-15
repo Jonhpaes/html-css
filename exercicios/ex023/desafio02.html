@@ -12,11 +12,16 @@
 
         table{
             border-collapse: collapse;
-            width: 300px;
+            width: 200px;
+        }
+
+        caption{
+            font-weight: bold;
+            padding: 10px;
         }
 
         td {
-            border: 2px solid black;
+            border: 1px solid black;
             padding: 10px;
             text-align: center;
             background-color: white;
@@ -28,67 +33,113 @@
             padding: 10px;
             text-align: center;
         }
+
+        .mulheres{
+            transition: .3s;
+        }
+        .homens{
+            transition: .3s;
+        }
+        .mulheres:hover{
+            background-color: rgb(179, 90, 104);
+            color: white;
+        }
+        .homens:hover{
+            background-color: rgb(51, 49, 142);
+            color: white;
+        }
+
+        .filmes{
+            transition: .3s;
+        }
+        .filmes:hover{
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
     </style>
 </head>
 <body>
+
+    <!-- 
+        IMPORTANTE
+                    "ROW" = LINHA
+                    "COL" = COLUNA
+                    "ROWGROUP" = VÁRIOS CONJUNTOS
+                    "COLGROUP" = VÁRIOS CONJUNTOS
+    -->
     <h1>Desafio de Tabela 3</h1>
     <table>
-        <tr>
-            <th>
-                Grupo
-            </th>
-            <th>
-                Nomes
-            </th>
-            <th colspan="3">
-                Filmes
-            </th>
-        </tr>
-        <tr>
-            <th rowspan="3">
-                Mulheres
-            </th>
+        <caption>
+            Filmes favoritos
+        </caption>
 
-            <td>Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
-        <tr>
-            <td>Beatriz Souza</td>
-            <td>Huck</td>
-            <td>Inception</td>
-            <td>Batman</td>
-        </tr>
-        <tr>
-            <td>Cláudia Melo</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
-        </tr>
+        <theade>
+            <tr>
+                <th scope="col"> <!-- scope="col" quer dizer que ele não é um conjunto de linhas -->
+                    Grupos
+                </th>
 
-        <tr>
-            <th rowspan="3">
-                Homens
-            </th>
+                <th scope="col"> <!-- scope="col" quer dizer que ele não é um conjunto de linhas -->
+                    Nomes
+                </th>
 
-            <td>Bruno Mendonça</td>
-            <td>Intocáveis</td>
-            <td>Amnésia</td>
-            <td>Gladiador</td>
-        </tr>
-        <tr>
-            <td>Daniel Lourenço</td>
-            <td>Wall-E</td>
-            <td>Oldboy</td>
-            <td>Dangal</td>
-        </tr>
-        <tr>
-            <td>Fabiano Mota</td>
-            <td>Star Wars 5</td>
-            <td>Taxi Driver</td>
-            <td>Toy Story</td>
-        </tr>
+                <th colspan="3" scope="colgroup"> <!-- "scope="colgroup" significa que esse elemento é um conjunto de linhas -->
+                    Filmes
+                </th>
+            </tr>
+        </theade>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup"> <!-- "scope="rowgroup" significa que esse elemento é um conjunto de linhas -->
+                    Mulheres
+                </th>
+
+                <td class="mulheres">Ana Maria Santos</td>
+                <td class="filmes">Alien</td>
+                <td class="filmes">Rambo</td>
+                <td class="filmes">Vingadores</td>
+            </tr>
+
+            <tr>
+                <td class="mulheres">Beatriz Souza</td>
+                <td class="filmes">Huck</td>
+                <td class="filmes">Inception</td>
+                <td class="filmes">Batman</td>
+            </tr>
+
+            <tr>
+                <td class="mulheres">Cláudia Melo</td>
+                <td class="filmes">Oblivion</td>
+                <td class="filmes">Matrix</td>
+                <td class="filmes">Big Hero</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">
+                    Homens
+                </th>
+
+                <td class="homens">Bruno Mendonça</td>
+                <td class="filmes">Intocáveis</td>
+                <td class="filmes">Amnésia</td>
+                <td class="filmes">Gladiador</td>
+            </tr>
+
+            <tr>
+                <td class="homens">Daniel Lourenço</td>
+                <td class="filmes">Wall-E</td>
+                <td class="filmes">Oldboy</td>
+                <td class="filmes">Dangal</td>
+            </tr>
+
+            <tr>
+                <td class="homens">Fabiano Mota</td>
+                <td class="filmes">Star Wars 5</td>
+                <td class="filmes">Taxi Driver</td>
+                <td class="filmes">Toy Story</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
